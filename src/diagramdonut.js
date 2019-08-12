@@ -35,6 +35,7 @@ import { Doughnut } from 'react-chartjs-2';
 import { Chart } from 'react-chartjs-2';
 import { Bar } from 'react-chartjs-2';
 
+
 class Charts extends Component {
     constructor (props){
         super(props);
@@ -43,7 +44,7 @@ class Charts extends Component {
                 labels:['januari','februari','maret','april','mei','juni','juli','agustus','september','oktober','november','desember'],
                 datasets:[
                     {
-                        label:'login',
+                        label:'login sukses',
                         data:[
                             10000,
                             12000,
@@ -81,12 +82,12 @@ class Charts extends Component {
     render() { 
         return (
             <Grid item xs={12} sm={12}>
-                Data Diagram Login
-            <Bar
+                Data Diagram Login Wifi.id
+            <Doughnut
                 data={this.state.chartData}
                 options={{ maintainAspectRatio: false }}
             /> 
-            </Grid>      
+            </Grid>                 
         );
     }
 }

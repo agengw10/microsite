@@ -35,6 +35,11 @@ import { Doughnut } from 'react-chartjs-2';
 import { Chart } from 'react-chartjs-2';
 import { Bar } from 'react-chartjs-2';
 import DiagramBar from './diagrambar';
+import DiagramDonut from './diagramdonut';
+import DiagramDonut2 from './diagramdonut2';
+import TrafikGb from './trafikgb';
+import TabelGb from './tabel';
+import TabelGb2 from './tabel2';
 
 const useStyles = makeStyles({
   card: {
@@ -89,12 +94,41 @@ export default function SimpleCard() {
       </CardContent>
     </Card>
     </Grid> 
-    <Grid item xs={12} sm={6}>
-        <DiagramBar/>
+    <Grid item xs={12} sm={12}>
+        <Card className={classes.card}>
+            <CardContent>
+                <DiagramBar/>
+             </CardContent>
+        </Card>
     </Grid>  
     <Grid item xs={12} sm={6}>
-        diagram Donut
-    </Grid>  
+        <Card className={classes.card}>
+                <CardContent>        
+                    <DiagramDonut/>
+                </CardContent>
+        </Card>       
+    </Grid>
+    <Grid item xs={12} sm={6}>
+    <Card className={classes.card}>
+                <CardContent>          
+                    <DiagramDonut2/>
+                </CardContent>
+        </Card>                       
+    </Grid>
+    <Grid item xs={12} sm={12}>
+        <Card className={classes.card}>
+            <CardContent>
+                <TabelGb/>
+             </CardContent>
+        </Card>
+    </Grid>
+    <Grid item xs={12} sm={12}>
+        <Card className={classes.card}>
+            <CardContent>
+                <TabelGb2/>
+             </CardContent>
+        </Card>
+    </Grid>              
 </Grid>
   );
 }

@@ -45,13 +45,12 @@ import MaterialTable from 'material-table';
 export default function MaterialTableDemo() {
   const [state, setState] = React.useState({
     columns: [
-      { title: 'Nama Server', field: 'name' },
-      { title: 'Operating System', field: 'operating' },
-      { title: 'Service', field: 'service' },
-      { title: 'Memory/HDD', field: 'memory'},
+      { title: 'Data Trafik wifi.id', field: 'trafik' },
+      { title: 'Trafik(GB)', field: 'gb' },
+      { title: 'Regional', field: 'regional' },
     ],
     data: [
-      { name: 'Radius 1', operating: 'Centos7', service: 'freeRadius', memory: '32GB' },
+      { trafik: '1000000', gb: '500GB', regional: '1' },
     ],
 
   });
@@ -80,7 +79,7 @@ export default function MaterialTableDemo() {
     <div className="container atas">
     <MaterialTable
     icons={tableIcons}
-      title="List Data Server"
+      title="Data Trafik Wifi.id dan WMS"
       columns={state.columns}
       data={state.data}
       editable={{

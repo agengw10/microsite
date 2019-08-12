@@ -10,6 +10,7 @@ import CamPaign from './campaign';
 import TraFik from './trafik';
 import DataServer from './dataserver';
 import DanLain from './dll';
+import DataTicket from './dataticket';
 
 
 
@@ -24,6 +25,7 @@ export default class RouterDefine extends Component {
                         <Route exact path="/campaign" component={CamPaign} />
                         <Route exact path="/trafik" component={TraFik} />
                         <Route exact path="/dataserver" component={DataServer} />
+                        <Route exact path="/dataticket" component={DataTicket} />
                         <Route exact path="/dll" component={DanLain} />
                     </div>
                 </Switch>

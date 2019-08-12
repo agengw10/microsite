@@ -131,6 +131,10 @@ const NavDrawer = (props) => {
                     <ListItemIcon><WhatsHot /></ListItemIcon>
                     <ListItemText primary="Server Maintenance" />
                 </ListItem>
+                <ListItem component={Link} to="/dataticket" button>
+                    <ListItemIcon><WhatsHot /></ListItemIcon>
+                    <ListItemText primary="Data Ticketing" />
+                </ListItem>               
                 <ListItem component={Link} to="/dll" button>
                     <ListItemIcon><WhatsHot /></ListItemIcon>
                     <ListItemText primary="DLL" />
