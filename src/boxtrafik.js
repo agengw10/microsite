@@ -31,6 +31,10 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
+import { Doughnut } from 'react-chartjs-2';
+import { Chart } from 'react-chartjs-2';
+import { Bar } from 'react-chartjs-2';
+import DiagramBar from './diagrambar';
 
 const useStyles = makeStyles({
   card: {
@@ -58,9 +62,6 @@ export default function SimpleCard() {
     <Grid item xs={12} sm={6}>
     <Card className={classes.card}>
       <CardContent>
-        {/* <Typography className={classes.title} color="textSecondary" gutterBottom>
-          Word of the Day
-        </Typography> */}
         <Typography variant="h5" component="h2">
             Data Wifi.id
         </Typography>
@@ -76,11 +77,8 @@ export default function SimpleCard() {
     <Grid item xs={12} sm={6}>
     <Card className={classes.card}>
       <CardContent>
-        {/* <Typography className={classes.title} color="textSecondary" gutterBottom>
-          Word of the Day
-        </Typography> */}
         <Typography variant="h5" component="h2">
-            Data WMS
+        Data WMS
         </Typography>
         <Typography variant="h6" component="h6">
         Login Sukses :1234
@@ -90,7 +88,13 @@ export default function SimpleCard() {
         </Typography>   
       </CardContent>
     </Card>
-    </Grid>    
+    </Grid> 
+    <Grid item xs={12} sm={6}>
+        <DiagramBar/>
+    </Grid>  
+    <Grid item xs={12} sm={6}>
+        diagram Donut
+    </Grid>  
 </Grid>
   );
 }
